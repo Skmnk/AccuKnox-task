@@ -1,0 +1,355 @@
+
+.widget{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+}
+
+.progressbar-container {
+  align-items: center;
+  justify-content: center;
+  width: 100px; /* Adjust the size as needed */
+  height: 100px; /* Adjust the size as needed */
+}
+
+
+.innertext {
+  margin-left: 150px; /* Add space between progress bar and text */
+  margin-top: -115px;
+  text-align: left;
+  line-height: 1.5;
+}
+/* styles .css */
+
+.dashboard {
+  padding: 20px;
+  background-color: #f0f5fa;
+}
+
+
+
+.category-row {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.widgets-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* Adjust as needed */
+  padding: 25px 25px;
+}
+
+.widget {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  height: 200px;
+  border-radius: 20px 20px 20px 20px;
+
+}
+
+.button-add{
+  height: 175px;
+  width: 175px;
+  margin: auto;
+  border-radius: 25px 25px 25px 25px;
+}
+
+
+.home--main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f5fa;
+}
+.home--button{
+  padding: 20px 20px;
+  color: white;
+  height: 100px;
+  border-radius: 4px;
+  background-color: #14147d;
+  font-size: larger;
+  font-weight: bolder;
+  text-align: center;
+  align-items: center;
+  
+}
+
+.home--button:hover{
+  color: #14147d;
+  background-color: white;
+}
+
+
+
+
+/* navbar css */
+.nav{
+  padding-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Adjust this value as needed */
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.breadcrumb {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumb li {
+  margin-right: 5px;
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.breadcrumb li::after {
+  content: ">";
+  margin-left: 5px;
+}
+
+.breadcrumb li:last-child::after {
+  content: "";
+}
+
+.search-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  
+}
+
+.search-input {
+  width: 50%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-results {
+  position: absolute; /* Positions results relative to the container */
+  top: 100%; /* Places the results right below the search bar */
+  left: 0;
+  right: 0;
+  background-color: white; /* Background color for better visibility */
+  border: 1px solid #ccc;
+  max-height: 200px; /* Limit the height if needed */
+  overflow-y: auto; /* Add scroll if results are too many */
+  z-index: 10; /* Ensure it stays above other content */
+  padding: 10px;
+}
+
+
+/* 
+dashboard header */
+
+.dashboard--title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Add padding as needed */
+}
+
+.dashboard--buttons {
+  display: flex;
+  gap: 10px; /* Adjust the gap between the buttons */
+}
+
+.dashboard--title h1 {
+  margin: 0;
+  font-size: 24px; /* Adjust as needed */
+}
+
+.dashboard-addwidget,
+.dashboard--refresh,
+.dashboard--settings {
+  padding: 8px 16px;
+  background-color: #14147d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dashboard--refresh {
+  /* Add specific styles for refresh button */
+}
+
+.dashboard--settings {
+  /* Add specific styles for settings button */
+}
+
+.dashboard--select{
+  padding: 8px 16px;
+  background-color: #14147d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.dashboard--option{
+  background-color: white;
+  color: black;
+}
+
+
+/* 
+side bar style  */
+
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 400px;
+  height: 100%;
+  background-color: #f4f4f4;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar--navbar {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #14147d;
+  color: white;
+}
+
+.sidebar-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+.sidebar--navtxt{
+  font-weight: 600;
+}
+
+.sidebar-content {
+  padding: 20px;
+  /* Add more styling as needed */
+}
+
+/* Sidebar navigation */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Sidebar nav item styling */
+.sidebar-nav-item {
+  background: none;
+  display: flex;
+  border: none;
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+  color:grey;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-nav-item:hover {
+  background-color: #f0f0f0;
+  color: #14147d;
+}
+
+/* 
+side bar widgets */
+
+/* Widget container */
+.sidebar-widgets {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+/* Individual widget items */
+.sidebar-widget-item {
+  margin: 5px 0;
+  padding: 5px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.sidebar--footer{
+  display: flex;
+  justify-content: flex-end;
+}
+.cancel{
+  margin-right: 20px;
+  padding: 8px 16px;
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirm{
+  padding: 8px 16px;
+  background-color: #14147d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+
+.select-category{
+  border-radius: 4px;
+  padding: 8px 16px;
+  height: 40px;
+}
+
+.newwidget-name{
+  height: 30px;
+  margin-top: 15px;
+}
+
+.newwidget-message{
+  height: 30px;
+  margin-top: 15px;
+}
+
+.newwidget-addbutton{
+  padding: 8px 16px;
+  background-color: #14147d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+}
