@@ -16,7 +16,7 @@ And continue the step 2
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Skmnk/accu-knox.git
+   git clone https://github.com/Skmnk/AccuKnox-task.git
    ```
 2. **Navigate to the project directory:**
 
