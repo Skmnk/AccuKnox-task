@@ -10,7 +10,7 @@ Kindly find the video demo link attached in this file, and check `package.json` 
 
 [click me to download the zip file of the project](https://drive.google.com/file/d/1rli-Ooi2E-zHVX5rKIWN_n3tIe62r953/view?usp=sharing)
 
-And continue the step 2
+And continue from step 2
 
 ## Installation
 
